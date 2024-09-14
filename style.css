@@ -95,13 +95,36 @@ section > div.item{
    margin-top: 20px;
 }
 
+div.item > h1{
+    width: 300px;
+
+    text-align: center;
+    font-size: 1.1em;
+
+    color: white;
+    background-color: #332d5a;
+}
+
 div.item > img{
     width: 150px;
 }
 
 div.item > img.bilhete{
-    width: 280px;
+    width: 298px;
+
+    border: 1px solid #332d5a;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
+}
+
+div.item > a{
+    width: 300px;
+
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    background-color: #332d5a;
+    color: yellow;
+
 }
 
 div.item > div.odd{
