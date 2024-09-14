@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* ============================================HEADER========================================= */
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    background-image: linear-gradient(to right, #483D8B, #332d5a);
+}
+
+header > h1{
+    flex: 1 0 300px;
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+header > span#icon{
+    flex: 0 1 30px;
+
+    font-size: 3em;
+    text-align: center;
+
+    color: white;
+    text-shadow: 0px 0px 15px white;
+
+    animation: rodar 5s infinite;
+}
+
+
+/* ============================================MENU========================================= */
+menu{
+    display: block;
+}
+
+menu > div#menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+div#menu > a{
+    flex: 1 1 100px;
+    padding: 5px;
+
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+
+    color: white;
+    background-color: #483D8B;
+    border: 1px solid white;
+}
+
+div#menu > a.ativo{
+    background-color: #332d5a;
+    font-size: 1.3em;
+}
+
+
+/* ============================================SECTION========================================= */
+
+
+section{
+    width: 300px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+section > div.item{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+   align-content: center;
+   margin-top: 20px;
+}
+
+div.item > img{
+    width: 150px;
+}
+
+div.item > img.bilhete{
+    width: 280px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
+}
+
+div.item > div.odd{
+    width: 280px;
+    margin: auto;
+    padding: 7px;
+
+    background-color: #483D8B;
+    border: 2px solid #483D8B;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.384);
+}
+
+div.odd > p{
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+/* ==========================================ANIMATION====================================== */
+
+@keyframes rodar{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
