@@ -127,6 +127,21 @@ div.item > a{
 
 }
 
+div.item > a.nosso{
+    width: 300px;
+    padding: 5px 0px;
+
+    text-align: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 3px #332d5a;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #D23709;
+    color: yellow;
+
+}
+
 div.item > div.odd{
     width: 280px;
     margin: auto;
