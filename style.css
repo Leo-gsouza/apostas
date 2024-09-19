@@ -19,13 +19,13 @@ header{
     align-items: center;
 
     padding: 10px;
-    background-image: linear-gradient(to right, #483D8B, #332d5a);
+    background-image: linear-gradient(to right, #005440, #298165 );
 }
 
 header > h1{
     flex: 1 0 300px;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.7em;
     text-transform: uppercase;
 
     color: white;
@@ -68,15 +68,21 @@ div#menu > a{
     font-family: 'Times New Roman', Times, serif;
 
     color: white;
-    background-color: #483D8B;
+    background-color: #383838;
     border: 1px solid white;
 }
 
 div#menu > a.ativo{
-    background-color: #332d5a;
+    background-color: #FFE418;
+    color: black;
     font-size: 1.3em;
 }
 
+
+/* ============================================MAIN========================================= */
+main{
+    background-color: #4B554E;
+}
 
 /* ============================================SECTION========================================= */
 
@@ -94,9 +100,10 @@ section > div.item{
    align-content: center;
 
    padding: 7px;
-   margin-top: 20px;
+   margin: 50px 0px;
 
-   background-color: #332d5a;
+   background-color: white;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568) ;
 }
 
 div.item > h1{
@@ -104,25 +111,24 @@ div.item > h1{
     padding: 20px 2px;
 
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
     text-transform: uppercase;
     font-family: monospace;
 
-    color: white;
-    background-color: #332d5a;
+    color: #282828;
 }
 
-div.item > img{
+div.item > img.escudo{
     width: 140px;
 
     border-radius: 10px;
+
+    animation: scala 1.5s infinite alternate;
 }
 
 div.item > img.bilhete{
     width: 282px;
 
-    border: 1px solid #332d5a;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
 }
 
 div.item > a{
@@ -131,7 +137,7 @@ div.item > a{
     text-align: center;
     font-size: 1.1em;
     text-decoration: none;
-    background-color: #332d5a;
+    background-color: #282828;
     color: yellow;
 
 }
@@ -147,7 +153,9 @@ div.item > a.nosso{
     text-shadow: 0px 0px 3px #332d5a;
     font-weight: bold;
     text-decoration: none;
-    background-color: #332d5a;
+
+    background-color: #282828;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
     color: yellow;
 
 }
@@ -182,5 +190,15 @@ div.odd > p{
     }
     100%{
         rotate: 360deg;
+    }
+}
+
+@keyframes scala{
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.12;
     }
 }
