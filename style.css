@@ -123,7 +123,7 @@ div.item > img.escudo{
 
     border-radius: 10px;
 
-    animation: scala 1.5s infinite alternate;
+   /*  animation: scala 1.5s infinite alternate; */
 }
 
 div.item > img.bilhete{
