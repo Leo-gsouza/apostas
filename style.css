@@ -101,9 +101,12 @@ section > div.item{
 
 div.item > h1{
     width: 300px;
+    padding: 20px 2px;
 
     text-align: center;
-    font-size: 1.1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: monospace;
 
     color: white;
     background-color: #332d5a;
