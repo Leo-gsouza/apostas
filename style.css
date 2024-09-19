@@ -123,7 +123,7 @@ div.item > img.escudo{
 
     border-radius: 10px;
 
-   /*  animation: scala 1.5s infinite alternate; */
+    animation: scala 3s infinite alternate; 
 }
 
 div.item > img.bilhete{
@@ -131,18 +131,8 @@ div.item > img.bilhete{
 
 }
 
+
 div.item > a{
-    width: 300px;
-
-    text-align: center;
-    font-size: 1.1em;
-    text-decoration: none;
-    background-color: #282828;
-    color: yellow;
-
-}
-
-div.item > a.nosso{
     width: 300px;
     margin-top: 3px;
     padding: 5px 0px;
@@ -158,29 +148,11 @@ div.item > a.nosso{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
     color: yellow;
 
+    animation: color 8s infinite alternate;
+
 }
 
-div.item > div.odd{
-    width: 280px;
-    margin: auto;
-    padding: 7px;
 
-    background-color: #483D8B;
-    border: 2px solid #483D8B;
-    border-radius: 7px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.384);
-}
-
-div.odd > p{
-    padding: 5px 0px;
-    text-align: center;
-    font-size: 0.8em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-
-    color: white;
-    text-shadow: 0px 0px 10px black;
-}
 
 /* ==========================================ANIMATION====================================== */
 
@@ -199,6 +171,17 @@ div.odd > p{
     }
 
     100%{
-        scale: 1.12;
+        scale: 1.05;
+    }
+}
+
+@keyframes color{
+    0%{
+        color: yellow;
+    }
+   
+    100%{
+        color: greenyellow ;
+        text-shadow: 0px 0px 5px black;
     }
 }
