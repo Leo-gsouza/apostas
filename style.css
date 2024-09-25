@@ -93,6 +93,29 @@ section{
     padding: 10px 0px;
 }
 
+section > p.legenda{
+    padding: 20px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+    text-transform: uppercase;
+
+    background-color: rgb(226, 226, 226);
+}
+
+section > h1{
+    width: 300px;
+    margin: auto;
+
+    text-align: center;
+    font-family: monospace;
+
+    background-color: #005440;
+    color: #FFE418;
+}
+
+
 section > div.item{
    display: flex;
    flex-flow: row wrap;
@@ -100,7 +123,7 @@ section > div.item{
    align-content: center;
 
    padding: 7px;
-   margin: 50px 0px;
+   margin-bottom: 60px 0px;
 
    background-color: white;
    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568) ;
@@ -160,9 +183,10 @@ div.item > img.bilhete{
 }
 
 div.item > img.eliminar{
+    width: 280px;
     padding: 5px 0px ;
-    margin: 10px 0px ;
-    border: 2px solid darkslategray;
+    margin-bottom: 10px;
+   
 
 }
 
